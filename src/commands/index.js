@@ -6,7 +6,7 @@ const channelID = process.env.CHANNEL_ID;
 
 const commands = {
   ping,
-  '8ball': eightBall
+  'jokerdetector': eightBall
 };
 
 module.exports = async (msg) => {

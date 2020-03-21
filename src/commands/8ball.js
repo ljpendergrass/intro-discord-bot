@@ -1,18 +1,20 @@
 const eightBall = [
-  'As I see it, yes.',
-  'Ask again later.',
-  'Better not tell you now.',
-  'Cannot predict now.',
-  'Concentrate and ask again.',
-  'Don\'t count on it.',
-  'It is certain.',
-  'It is decidedly so.'
+  'You are :warning: :warning: 100% JOKERFIED!! :jokerfication: You are a certified PSYCHOPATH',
+  'You are 90% Jokerfied, seek qualified anti-jokerfication care immediately',
+  'You are 80% Jokerfied, reduce jokerfication rate ASAP!!',
+  'You are 70% Jokerfied!',
+  'You are 60% Jokerfied!',
+  'You are 50% Jokerfied!',
+  'You are 40% Jokerfied!',
+  'You are 30% Jokerfied!',
+  'You are 20% Jokerfied!',
+  'You are 10% Jokerfied! You could actually do with more Jokerfication. :sleeping:'
 ];
   
 module.exports = async (msg, args) => {
   if (!args.length) return;
   const i = Math.floor(Math.random() * eightBall.length);
   const reply = eightBall[i];
-  await msg.channel.send(`${msg.author} ${reply} 🚂`);
+  await msg.channel.send(`${msg.author} ${reply} :jokerfication:`);
 };
   
